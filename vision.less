@@ -1,0 +1,261 @@
+// out: vision.css, sourcemap: false, compress: true
+*{font-family: 'Pathway Gothic One', sans-serif;}
+body,html,h1,h2,h3,ul,ol,dl,li,p{margin:0; padding:0;}
+ul,ol,li{list-style:none;}
+img{border:0; vertical-align: top;}
+a{text-decoration: none;}
+
+@media screen and (max-width:1200px){
+    .cont_bottom{
+        h4{
+            overflow: visible;
+            position:absolute;
+            top:40px;
+            left:70px;
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .leftmenu{
+        ul{
+            display:none;
+        }
+    }
+    .contents_wrap{
+        .cont_title{
+            img{
+                width:50px;
+                height:50px;
+            }
+            h2{
+                display:block;
+                font-size:32px;
+                line-height:600%;
+            }
+        }
+    }
+
+    } //media screen 1000px 끝
+
+.wrap{
+    width:100%;
+    height:100%;
+    .vision_wrap{
+        width:100%;
+        height:100%;
+        .vision_top{
+            padding-top: 80px;
+            width:100%;
+            height:450px;
+            background-image:url(img/vis.jpg);
+            background-size:cover;
+            background-position:center center;
+            position:relative;
+            .leftmenu{
+                width:100%;
+                height:54px;
+                border:1px #fff solid;
+                border-bottom:0;
+                border-left:0;
+                border-right:0;
+                position:absolute;
+                bottom:0;
+                ul{
+                    text-align: center;
+                }
+                a{
+                    color:#fff;
+                }
+                li{
+                    letter-spacing:3px;
+                    display:inline-block;
+                    line-height:330%;
+                    font-size:16px;
+                    font-weight:bold;
+                    &:nth-child(1){
+                        height:54px;
+                        width:122px;
+                        background:rgba(5,158,159, 0.7);
+                    }
+                    &:nth-child(2){
+                        height:54px;
+                        width:148px;
+                        &:hover{
+                            text-decoration: underline;;
+                        }
+                    }
+                    &:nth-child(3){
+                        height:54px;
+                        width:128px;
+                        &:hover{
+                            text-decoration: underline;;
+                        }
+                    }
+                    &:nth-child(4){
+                        height:54px;
+                        width:122px;
+                        margin-right:0;
+                        &:hover{
+                            text-decoration: underline;;
+                        }
+                    }
+                }
+            }
+        } //vision_top
+        .contents_wrap{
+            width:100%;
+            height:100%;
+            .cont_title{
+                max-width:1200px;
+                height:187px;
+                margin:0 auto;
+                position:relative;
+                .prev{
+                    position:absolute;
+                    left:0;
+                    top:65px;
+                }
+                .next{
+                    position:absolute;
+                    right: 0;
+                    top:65px;
+                }
+                h2{
+                    display:block;
+                    line-height:500%;
+                    text-align:center;
+                    font-size:40px;
+                    letter-spacing:1px;
+                }
+            }
+            .cont_top{
+                width:100%;
+                height:420px;
+                background-image:url(img/vision-top.jpg);
+                background-position:center center;
+                position:relative;
+                h3{
+                    text-align:center;
+                    color:#fff;
+                    padding:130px 0 30px 0;
+                    font-size:26px;
+                }
+                p{
+                    max-width:1200px;
+                    height:140px;
+                    text-transform: uppercase;
+                    margin:0 auto;
+                    text-align:center;
+                    font-size:60px;
+                    color:#fff;
+                    font-weight:bold;
+                    letter-spacing:2px;
+                    i{
+                        display:block;
+                        text-align:center;
+                        font-size:60px;
+                        color:#fff;
+                        text-align:center;
+                        font-style: normal;
+                        font-weight:bold;
+                        letter-spacing:2px;
+                    }
+                }
+            }
+            .cont_bottom{
+                width:100%;
+                height:100%;
+                h3{
+                    max-width:1200px;
+                    height:80px;
+                    margin:0 auto;
+                    font-size:26px;
+                    text-align:center;
+                    padding:100px 0 100px 0;
+                    i{
+                        display: block;
+                        font-weight:bold;
+                        font-size:40px;
+                        text-align:center;
+                        font-style:normal;
+                        letter-spacing:2px;
+                    }
+                }
+                .grow{
+                    padding-bottom:100px;
+                    max-width:1200px;
+                    height: 351px;
+                    margin:0 auto;
+                    position:relative;
+                    h4{
+                        background-image:url(img/vision_bul.png);
+                        background-repeat:no-repeat;
+                        width:168px;
+                        height:70px;
+                        color:#fff;
+                        font-weight:bold;
+                        font-size:20px;
+                        text-align: center;
+                        overflow: visible;
+                        position:absolute;
+                        top:60px;
+                        left:50px;
+                        i{
+                            font-style:normal;
+                            position:absolute;
+                            top:23px;
+                            left:40px;
+                        }
+                    }
+                    img{
+                        display:block;
+                        margin:0 auto;
+                    }
+                }
+                .coper{
+                    padding-bottom:100px;
+                    max-width:1200px;
+                    height:568px;
+                    margin:0 auto;
+                    position:relative;
+                    h4{
+                        background-image:url(img/vision_bul.png);
+                        background-repeat:no-repeat;
+                        width:168px;
+                        height:70px;
+                        color:#fff;
+                        font-weight:bold;
+                        font-size:20px;
+                        text-align: center;
+                        overflow: visible;
+                        position:absolute;
+                        top:60px;
+                        left:50px;
+                        i{
+                            font-style:normal;
+                            position:absolute;
+                            top:23px;
+                            left:40px;
+                        }
+                    }
+                    img{
+                        display:block;
+                        margin:0 auto;
+                    }
+                }
+                .crsm{
+                    padding-bottom:100px;
+                    max-width:1200px;
+                    height:190px;
+                    margin:0 auto;
+                    img{
+                        max-width:1200px;
+                        display:block;
+                        text-align:center;
+                    }
+                }
+            }
+        } //contents_wrap
+
+    } //vision_wrap
+} //wrap

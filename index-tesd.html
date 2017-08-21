@@ -1,0 +1,67 @@
+
+var slideIdx =  Math.floor(Math.random() * $('.slidebanner li').size())
+$('.slidebanner li').eq(slideIdx).addClass('on').children('img').show()
+
+
+function slideMove(start,end,idx){
+     $('.slidebanner li').eq(idx).addClass('on').children('img').css({
+         "left":start,
+         "display":'block'
+     }).animate({
+         'left':end
+     }).parent().siblings().removeClass('on')
+}
+
+var slideInter = setInterval(function(){
+    $('.next').click();
+},2500)
+
+$('.slidebanner').mouseenter(function(){
+
+    clearInterval(slideInter)
+}).mouseleave(function(){
+
+    slideInter = setInterval(function(){
+        $('.next').click();
+    },2500)
+})
+
+$('.slidebanner li a').click(function(){
+    slideIdx = $(this).parent('li').index();
+    var hisNum = $('.slidebanner li.on').index();
+
+    if(slideIdx > hisNum){
+        slideMove("0","-100%",hisNum)
+        slideMove("100%","0",slideIdx)
+    }else if(slideIdx < hisNum){
+        slideMove("0","100%",hisNum)
+        slideMove("-100%","0",slideIdx)
+    }
+
+})
+
+$('.slidebanner .next').on({
+    'click':function(){
+        slideMove("0","-100%",slideIdx)
+        slideIdx ++
+        slideMove("100%","0",slideIdx)
+
+        if(slideIdx == $('.slidebanner li').size()){
+            slideIdx = 0
+            slideMove("100%","0",slideIdx)
+        }
+    }
+})
+
+$('.slidebanner .prev').on({
+    'click':function(){
+        slideMove("0","100%",slideIdx)
+        slideIdx --
+        slideMove("-100%","0",slideIdx)
+
+        if(slideIdx < 0){
+            slideIdx = $('.slidebanner li').size() -1;
+            slideMove("-100%","0",slideIdx)
+        }
+    }
+})

@@ -2,118 +2,143 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <title></title>
+        <title>PORTFOLIO</title>
+        <link rel="stylesheet" href="portfolio.css" type="text/css" />
+        <link rel="stylesheet" href="gnb.css" type="text/css" />
+        <link rel="stylesheet" href="footer.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Pathway+Gothic+One" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="portfolio.js"></script>
+        <script type="text/javascript" src="gnb.js"></script>
 
     </head>
     <body>
         <div class="wrap">
-
-            <div class="top">
-                <div class="header-top">
-                    <span class="header-img">
-                        <img src="img/logo.png" alt="">
-                    </span>
-                    <div class="topmn">
-                        <ul>
-                            <li class="menu1"><a href="">COMPANY</a></li>
-                            <li class="menu2"><a href="">MANAGEMENT INNOVATION</a></li>
-                            <li class="menu3"><a href="nike">PORTFOLIO</a></li>
-                            <li class="menu4"><a href="">SUSTAINABILITY MANAGEMENT</a></li>
-                            <li class="menu5"><a href="">RECRUIT</a></li>
-                        </ul>
+            <div class="gnb">
+                <h1><a href="index.html"><img src="img/logo.png" alt=""></a></h1>
+                <ul class="gnb_menu">
+                    <li><a href="">Company</a></li>
+                    <li><a href="vision.html">Management Innovation</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="">sustainability management</a></li>
+                    <li><a href="">recruit</a></li>
+                </ul>
+                <div class="nav">
+                    <ul>
+                        <li class="lang_ko"><img src="img/home-ico.png" alt=""></li>
+                        <li class="lang_en"><p>ENG</p></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-
-                    <div class="top-r">
-                        <span class="home"><img src="http://www.tkgroup.co.kr/kor/_Img/Layout/home-ico.png" alt=""></span>
-                        <span class="eng"><p>ENG</p></span>
+                </div>
+                <div class="menu_bg">
+                    <div class="divarea">
+                        <div>
+                            <span class="menu_cate"><a href="javascript:void(0)">회사개요</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">CEO 인사말</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">회사연혁</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">관계사 안내</a></span>
+                        </div>
+                        <div>
+                            <span class="menu_cate"><a href="javascript:void(0)">비전</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">TK WAY</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">LEAN</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">TPM</a></span>
+                        </div>
+                        <div>
+                            <span class="menu_cate"><a href="javascript:void(0)">포트폴리오</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                        </div>
+                        <div>
+                            <span class="menu_cate"><a href="javascript:void(0)">SM</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">지속가능경영보고서</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">장학재단</a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)">장학생지원</a></span>
+                        </div>
+                        <div>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                            <span class="menu_cate"><a href="javascript:void(0)"></a></span>
+                        </div>
                     </div>
-
                 </div>
             </div>
-
             <div class="slide">
                 <ul>
-                    <li class="on">
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide1">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio01.png" alt="">
-                            <cite>NIKE LUNAREPIC FK</cite>
-                            <span>RUNNING</span>
-                        </div>
+                    <li class="slide_on">
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio01.png" alt="">
+                        <span class="name">AIR JORDAN TRAINER 1 LOW</span>
+                        <span class="cate">JORDAN</span>
                     </li>
-                    <li>
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide2">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio02.png" alt="">
-                            <cite>NIKE LUNAREPIC LOW FK</cite>
-                            <span>RUNNING</span>
-                        </div>
+                    <li class="slide_off">
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio02.png" alt="">
+                        <span class="name">NIKE LUNAREPIC FK</span>
+                        <span class="cate">RUNNING</span>
                     </li>
-                    <li>
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide3">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio03.png" alt="">
-                            <cite>NIKE LUNARGLIDE 8</cite>
-                            <span>RUNNING</span>
-                        </div>
+                    <li class="slide_off">
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio03.png" alt="">
+                        <span class="name">NIKE AIR MAX 2017</span>
+                        <span class="cate">RUNNING</span>
                     </li>
-                    <li>
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide4">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio04.png" alt="">
-                            <cite>NIKE AIR MAX 2017</cite>
-                            <span>RUNNING</span>
-                        </div>
+                    <li class="slide_off">
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio04.png" alt="">
+                        <span class="name">NIKE LUNARGLIDE 8</span>
+                        <span class="cate">RUNNING</span>
                     </li>
-                    <li>
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide5">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio05.png" alt="">
-                            <cite>NIKE FREE RN FK</cite>
-                            <span>RUNNING</span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href=""><button type="button" name="button"></button></a>
-                        <div class="slide6">
-                            <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio06.png" alt="">
-                            <cite>NIKE SHOX R4</cite>
-                            <span>RUNNING</span>
-                        </div>
+                    <li class="slide_off">
+                        <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio05.png" alt="">
+                        <span class="name">NIKE LUNAREPIC LOW FK</span>
+                        <span class="cate">RUNNING</span>
                     </li>
                 </ul>
+                <div class="btn_group">
+                    <a href="javascript:void(0)"><button type="button" name="button"></button></a>
+                    <a href="javascript:void(0)"><button type="button" name="button"></button></a>
+                    <a href="javascript:void(0)"><button type="button" name="button"></button></a>
+                    <a href="javascript:void(0)"><button type="button" name="button"></button></a>
+                    <a href="javascript:void(0)"><button type="button" name="button"></button></a>
+                </div>
+                <div class="slide_arrow">
+                    <a href="javascript:void(0)"><img class="port_prev" src="img/portfolio_prev.png" alt=""></a>
+                    <a href="javascript:void(0)"><img class="port_next" src="img/portfolio_next.png" alt=""></a>
+                </div>
             </div>
-
+            <!-- slide -->
             <div class="footer">
-                <div class="down">
-                    <span class="down1">
-                        <a href="">
-                        <span class=down1-img><img src="http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico01.png" alt=""></span>
-                        <span class="down-txt1">개인정보처리방침</span>
-                        </a>
-                    </span>
-                    <span class="down2">
-                        <a href="">
-                        <span class="down2-img"><img src="http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico02.png" alt=""></span>
-                        <span class="down-txt2">지속가능보고서 다운로드</span>
-                        </a>
-                    </span>
-                </div>
-                <div class="adress">
-                    <span class="f-logo"><img src="img/f-logo.png" alt=""></span>
-                    <div class="f-ad">
-                        <span class="name">태광실업㈜</span>
-                        <span class="adr">경상남도 김해시 김해대로 2635번길 26(안동)</span>
-                        <span class="tel">TEL : 055-333-7151</span>
-                        <span class="fax">FAX : 055-336-4917</span>
+                <div class="foot_top">
+                    <div class="">
+                        <span>
+                            <a href="">
+                                <img class="timg" src="img/ftoplink_ico01.png" alt="">
+                                개인정보처리방침
+                                <img class="next_arr" src="img/ftoplink_arr.png" alt="">
+                            </a>
+                        </span>
                     </div>
-                    <span class="copyright">Copyright (C) 2016 Taekwang. co., ltd All rights reserved.</span>
+                    <div class="">
+                        <span>
+                            <a href="">
+                                <img class="bimg" src="img/ftoplink_ico02.png" alt="">
+                                지속가능보고서 다운로드
+                                <img class="next_arry" src="img/ftoplink_arr.png" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    <div class="f_txt">
+                        <img src="img/f-logo.png" alt="">
+                        <p class="spot">태광실업㈜ 경상남도 김해시 김해대로 2635번길 26(안동)  TEL : 055-333-7151 FAX : 055-336-4917</p>
+                        <p class="coperate">Copyright (C) 2016 Taekwang. co., ltd All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-
-
-
         </div>
     </body>
 </html>
