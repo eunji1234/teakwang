@@ -1,60 +1,48 @@
 // out: footer.css, sourcemap: false, compress: true
 *{font-family: 'Pathway Gothic One', sans-serif;}
+@media screen and (max-width:1200px) {
+    .footer .foot_top{
+        a{
+            width:500px;
+        }
+    }
+}
 .footer{
     width:100%;
     height:356px;
+    margin-top:-4px;
     .foot_top{
         width:100%;
         height: 70px;
         background-color:#191919;
-        a{
-            color:#fff;
-            display:block;
-            font-size:14px;
-            width:600px;
+        ul{
+            max-width:1100px;
             height:100%;
-        }
-        div{
-            max-width:1200px;
             margin:0 auto;
-        }
-        span{
-            line-height:400%;
-            width:550px;
-            height:70px;
-            float: left;
-            position: relative;
-            font-family: "Flaticon";
-            text-align: center;
-            &:first-child{
-                margin-left:20px;
+            a{
+                color:#fff;
+                font-size: 14px;
             }
-        }
-        .next_arr{
-            position:absolute;
-            top:41%;
-            left:380px;
-        }
-        .next_arry{
-            position:absolute;
-            top:41%;
-            left:400px;
-        }
-        .timg{
-            position: absolute;
-            top:25%;
-            left:200px;
-        }
-        .bimg{
-            position:absolute;
-            top:25%;
-            left:180px;
-        }
-        i{
-            width:10px;
-            height:10px;
-            color:#191919;
-            display:block;
+            li{
+                width:50%;
+                float:left;
+                text-align:center;
+                position:relative;
+                line-height:450%;
+                a{
+                    width:100%;
+                    height:100%;
+                }
+                span{
+                    .timg{
+                        padding:22px 15px;
+                    }
+                    .next_arr{
+                        padding:32px 15px;
+                    }
+
+                }
+            }
         }
     }
     .foot_bottom{

@@ -4,7 +4,12 @@ body,html,h1,h2,h3,ul,ol,dl,li,p{margin:0; padding:0;}
 ul,ol,li{list-style:none;}
 img{border:0; vertical-align: top;}
 a{text-decoration: none;}
-
+@media screen and (max-width:1200px) {
+    // .main_area{
+    //     height:300px !important;
+    //     overflow:hidden;
+    // }
+}
 @media screen and (max-width:1100px) {
     .main_video span p{
         font-size:100px !important;
@@ -13,6 +18,14 @@ a{text-decoration: none;}
 @media screen and (max-width:1000px) {
     .main_video span p{
         font-size:80px !important;
+    }
+    .social li i{
+        .btxt{
+            font-size: 20px !important;
+        }
+        .stxt{
+            display:none !important;
+        }
     }
 }
 
@@ -31,7 +44,7 @@ a{text-decoration: none;}
             span{
                 width:100%;
                 position:absolute;
-                top:40%;
+                top:45%;
                 p{
                     text-align:center;
                     display:block;
@@ -44,93 +57,104 @@ a{text-decoration: none;}
         }
         .main_area{
             width:100%;
-            height:380px;
             margin-top:-3px;
-            ul{
-                font-size:0;
-                z-index:99;
-            }
             li{
-                width:33.33333%;
-                height:380px;
-                display:inline-block;
+                float: left;
+                width:33.333%;
                 overflow:hidden;
-                &:hover{
-                    background-color:#086c6d;
-                    opacity:1;
-                    z-index:10;
+                position:relative;
+                &:hover img{
+                    transition:0.9s;
+                    transform: scale(1.2);
                 }
                 img{
-                    overflow:hidden;
                     width:100%;
                     height:100%;
-                    transition:0.5s;
-                    z-index:-1;
-                    &:hover{
-                        transform:scale(1.2);
-                    }
+                }
+                &::after{
+                    content:'';
+                    position:absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background:rgba(0,131,132,0.5);
+                    opacity:0;
+                }
+                &:hover::after{
+                    opacity:1;
                 }
             }
         }
         .global{
             width:100%;
-            height:900px;
-            background:#1d2227;
-            background-image: url(img/global-01.png);
-            background-position:center;
-            vertical-align: middle;
-            background-repeat:no-repeat;
+            background-color:#1d2227;
+            img{
+                width:100%;
+            }
         }
         .social{
             width:100%;
-            height:356px;
+            margin-top:-4px;
             li{
                 width:50%;
-                height:356px;
                 overflow:hidden;
                 position:relative;
                 float:left;
+                &:hover img{
+                    transition:0.9s;
+                    transform: scale(1.2);
+                }
                 img{
                     width:100%;
-                    height:100%;
-                    overflow:hidden;
-                    transition:0.5s;
-                    &:hover{
-                        transform:scale(1.2);
-                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background:rgba(0,131,132,0.5);
+                    opacity:0;
+                }
+                &:hover::after{
+                    opacity:1;
                 }
                 i{
-                    width:400px;
+                    width:100%;
                     height:50px;
                     color:#fff;
-                    z-index: 9;
-                    // font-size:24px;
+                    // z-index: 9;
                     font-style: normal;
                     position:absolute;
                     top:44%;
-                    left:22%;
                     .btxt{
+                        text-align:center;
                         font-size:26px;
-                        letter-spacing:2px;
+                        letter-spacing:1px;
                     }
                     .stxt{
+                        text-align:center;
                         font-size:22px;
                     }
                 }
                 span{
+                    text-transform:uppercase;
+                    font-weight:bold;
                     text-align:center;
                     display: block;
                 }
             } //li
         }
         .main_nike{
+            display:inline-block;
             width:100%;
-            height: 660px;
-            background-image:url(img/add-bg.jpg);
-            background-position:center;
-            background-size: cover;
             position:relative;
             img{
+                width:100%;
+            }
+            .slideInRight{
                 width:321px;
                 height:170px;
                 position:absolute;
