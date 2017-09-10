@@ -123,19 +123,16 @@
         } //hamburger
     } //nav
     .nav_menu{
-        display:none;
+        display: block;
+        float: right;
         width:240px;
         height:100%;
         background-color:#fff;
         position:fixed;
         right:-240px;
-        top:0;
+        top:80px;
         text-transform:uppercase;
         letter-spacing:.5px;
-        ul{
-            height:100%;
-            width:240px;
-        }
         a{
             position:absolute;
             top:0;
@@ -177,6 +174,9 @@
                 float: left;
                 height:194px;
                 border-left:1px #ccc solid;
+                &:nth-child(4){
+                    border-right: 1px #ccc solid;
+                }
                 &:last-child{
                     border:0;
                 }
